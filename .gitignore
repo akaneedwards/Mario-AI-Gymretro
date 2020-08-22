@@ -1,0 +1,18 @@
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+env
+__pycache__
+.DS_store
+.idea
+.sublime-workspace

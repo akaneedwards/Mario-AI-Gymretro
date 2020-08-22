@@ -1,0 +1,63 @@
+h1 {
+    color: rgba(0, 0, 64, 1);
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.runtime.img {
+  height: 340px;
+  margin: 15px;
+}
+
+.runtime-content {
+  display: flex;
+}
+
+.float-center {
+  float: center;
+  padding-top: 100px;
+}
+
+.vis {
+  /*background-color: #F8F8F8;*/
+  margin-bottom: 10px;
+}
+
+#introImage img {
+  display: inline-block;
+}
+
+#MarioStill {
+  margin-left: 40px;
+  padding-right: 20px;
+}
+
+#introImage {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.jumbotron{
+  background-color: #f8f5e8;
+  padding: 2rem;
+}
+.btn-group{
+  margin-left: 1.5rem;
+}
+
+.btn-secondary{
+  flex: none!important;
+  width: 5rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0.8rem;
+    padding: 1rem 2rem;
+    background-color: rgb(236, 250, 253);
+  }

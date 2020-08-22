@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/index.css') }}">
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../static/js/line-ppo2.js"></script>
+    <script src="{{ url_for('static', filename='js/line-trained.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+    <div id="intro-section">
+    <div class="card">
+      {% include 'intro-rl-part1.html' %}
+    </div>
+    </div>
+    <!--  About the training -->
+    <div class="card">
+    {% include 'intro-rl-part2.html' %}
+    </div>
+    <!-- Example of rewards related to training -->
+    <div class="runtime-section">
+    <div class="card">
+      {% include 'mario-ppo-trained.html' %}
+    </div>
+    </div>
+    <!-- About the algorithm -->
+    <div>
+    <div class="card">
+      {% include 'intro-rl-part3.html' %}
+    </div>
+    </div>
+    <div id="algorithm-section">
+    <div class="card">
+      {% include 'intro-rl-part4.html' %}
+    </div>
+    </div>
+    <!--  The training info & graph(s) -->
+    <div class="training-section-ppo">
+    <div class="card">
+      {% include 'mario-ppo-training.html' %}
+    </div>
+    </div>
+    <!--  The conclusion -->
+    <div class="card">
+    <div class="training-section-other">
+      {% include 'conclusion.html' %}
+    </div>
+    </div>
+{% endblock %}

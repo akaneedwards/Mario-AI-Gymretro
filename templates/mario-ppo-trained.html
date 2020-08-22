@@ -1,0 +1,29 @@
+<h2>A Trained Agent</h2>
+      <p>
+        The following graph demonstrates Super Mario using its trained policy to gain reward. For our 
+        trained model, we utilized a scenario that only rewards moving to the right, in order to 
+        train the agent to finish the level.
+        This is the same type of reward data that is estimated and gathered during training sessions.
+        The graph on the right
+        shows the growing reward from the agent's actions during the game. The flat-lines indicate
+        the loss of life, where no reward is gained. Super Mario has 3 lives before the game ends.
+      </p>
+      <p>
+        Click the play button to see the rewards grow as the game is played.
+        The reward flat-lines when mario loses one of his 3 lives.
+      </p>
+      <div class="btn-group" role="group" aria-label="Basic example">
+         <button id="play-ppo-button" type="button" class="btn btn-secondary">Play</button>
+         <button id="reset-ppo-button" type="button" class="btn btn-secondary">Reset</button>
+         <button id="finish-ppo-button" type="button" class="btn btn-secondary">Finish</button>
+      </div>
+      <div class="runtime-content" >
+        <video
+          id="trained-ppo-video"
+          class="runtime img"
+          src="{{url_for('static', filename='data/ppo/supermariobros1e7_play.mp4')}}"
+          type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div id="ppo-mario-graph1" class="runtime vis"></div>
+      </div>

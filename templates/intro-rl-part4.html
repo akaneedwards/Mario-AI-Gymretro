@@ -1,0 +1,33 @@
+<h3>Algorithms</h3>
+<p>
+  <em>Proximal Policy Optimization (PPO)</em> is a policy gradient RL algorithm that is popular in
+  <a target="_blank" href="https://openai.com/blog/openai-baselines-ppo" >OpenAI Baselines</a>.
+  The <em>policy</em> is a function that determines agent
+  actions based on a set of rewards and states. As the agent is trained, the gradient
+  of the policy function is calculated to maximize
+  rewards over time given the current state. PPO adjusts the agent's action policy
+  to minimize the loss function of the expected rewards vs. the actual rewards. PPO
+  minimizes the variability of policy changes by use of an adaptive penalty function
+  that encourages convergence without sacrificing too much performance. This
+  prevents a large deviation from the previous policy and ensures eventual
+  convergence on a good, hopefully optimal, policy.
+</p>
+<p>
+  <em>PPO2</em> is the GPU-enabled implementation of PPO, resulting in even faster performance.
+  It has additional enhancements in clipping (restraining) and normalizing the value function
+  for smoother policy changes over each training iteration.
+</p>
+<p>
+  <em>ACKTR</em>, Actor Critic using Kronecker-factored Trust Region,
+  uses three techniques: actor-critic methods,
+  trust region optimization for more consistent improvement,
+  and distributed Kronecker factorization to improve sample efficiency and scalability.
+</p>
+ <p>
+   One difference between ACKTR and PP02 is how they calculate action sequences.
+   PPO2 uses policy gradient to continue actions that give good reward.
+   ACKTR uses trust regions to explore a wider array of action variations.
+   There are many variations of machine learning models in Reinforcement Learning.
+ </p>
+
+<img src="../static/resource/OpenAI.png" style="max-width: 15rem; margin-top: 1rem;">

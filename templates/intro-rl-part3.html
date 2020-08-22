@@ -1,0 +1,31 @@
+<div id="intro-part3">
+  <p>
+    Scenario reward assignments are critical RL input. Tools, like
+    <a href="https://retro.readthedocs.io/en/latest/index.html">Gym Retro</a>,
+    support reward assignment configuration and provide the structure for
+    opening a number of emulated console games, determining and applying
+    the appropriate scenario, training an agent for many timesteps using
+    the reward structure, and modifying agent actions to maximize reward values over time.
+   </p>
+    <p>
+      There are several difficulties associated with RL. Two are:
+      <ul>
+        <li> <em>Delayed vs Immediate reward:</em> A delayed large reward might have a smaller influence
+      than a small immediate reward, leading to ineffective results. One example of this in our project is the difficulty
+      Mario has if moving underground through the pipe in Level 1-1: the exit pipe for this underground portion requires
+      Mario to move down and to the left, whereas more immediate rewards are typically given for moving up and to the right.
+      If Mario gets stuck to the right of the exit pipe, the agent might never move to the left to enter the pipe and continue
+      to finish the level, even though finishing provides the larger reward.
+       </li>
+        <li> <em>Exploration for reward:</em>
+       Another issue is that RL agents
+      must explore their environments in order to find and obtain rewards, and the relatively random nature of
+      this exploration can cause two RL agents to end up behaving quite differently as the initial differences
+      propagate into large differences later on. This also means that in its initial stages, the training of an agent can cause
+      broad action policy changes over a short time, resulting in high variance. Various algorithms have been developed to minimize the impact of these
+      variations. As part of our project we trained two agents both using the PPO2 algorithm to
+      see if there are significant differences in their outcomes.
+      </li>
+      </ul>
+   </p>
+</div>

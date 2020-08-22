@@ -1,0 +1,54 @@
+
+      <h2>Training: Value Loss</h2>
+      <p>
+        The following graph illustrates the change in Value Loss during a
+        training iteration with about 10 million time steps. Value loss describes
+        how well the policy model is able to predict the value at each state.
+        This value fluctuates while learning and then stablizes as its prediction improves.
+      </p>
+      <p>
+          The <b style="color: darkorange"> orange</b> and <b style="color: darkcyan"> green</b> lines show 2 different sessions of training using the same algorithm.
+        The difference in the 2 training sessions illustrates how variable the training progression can be.
+        Notice how both green and orange training sessions converge as they reach
+        equilibrium on their Value Loss.
+      </p>
+      <div class="algorithm-section">
+          <p>
+          Toggle the ACKTR Value Loss training logs to view the variation of
+          ACKTR to PPO2.
+          <button type="button" class="btn btn-primary btn-sm" id="view-acktr-loss-toggle"
+                  data-toggle="button" aria-pressed="false" autocomplete="off">
+            Show ACKTR
+          </button>
+        </p>
+      </div>
+        <div class="graph-section" style="justify-content: space-evenly;">
+           <div class="vis" id="ppo-mario-graph2"></div>
+        </div>
+
+  <!-- this is to put the two on separate cards -->
+  </div>
+  <div class="card">
+
+      <h2>Training: Episode Reward</h2>
+      <p>
+        The following graph illustrates the change in Episode Reward during a
+        training iteration with about 10 million steps. Episode Reward describes
+        the mean reward from each episode in the training.
+        The value fluctuates while learning but slowly increases as the policy improves.
+      </p>
+      <p>
+        The orange and green lines show 2 different sessions of training using the same algorithm.
+        The differences again show how variable the training progression can be.
+        Both training sessions converge in the Episode Rewards as they both improve their policies.
+      </p>
+      <p>
+          Toggle the ACKTR Episode Reward training logs to view the variation of ACKTR to PPO2.
+          <button type="button" class="btn btn-primary btn-sm" id="view-acktr-reward-toggle"
+                  data-toggle="button" aria-pressed="false" autocomplete="off">
+            Show ACKTR
+          </button>
+        </p>
+        <div class="graph-section" style="justify-content: space-evenly;">
+           <div class="vis" id="ppo-mario-graph3"></div>
+        </div>

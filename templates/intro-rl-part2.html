@@ -1,0 +1,33 @@
+<h2>Reward scenario</h2>
+<div id="intro-part2">
+    <p>
+      In order to train an RL agent, the rewards and penalties of the
+      agent's environment must be defined.
+      Each interaction has an assigned reward value. The rewards can be for numerical values such
+      as increasing points, calculated by pulling out values from the game itself, or
+      rewards for progressing through the environment, calculated by utilizing neural networks for
+      image recognition on the visual environment. Negative rewards, or punishments, can also be utilized.
+      <div id="introImage">
+        <img id="MarioStill" width="150" height="140" src="static/resource/MarioPlayStill.png">
+        <img width="400" height="150" src="https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg"
+             alt="Reinforcement part of Reinforcement Learning" /><br/>
+      </div>
+    </p>
+    <p>
+        Image source: https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html
+    </p>
+    <p>
+      The reward assignment structure can be referred to as a scenario.
+      The scenario for Super Mario Bros consists of these basic parts:
+      <ul> 
+        <li>
+          move to the right and finish the level
+        <li>
+          minimize the number of lives lost
+        </li>
+        <li>
+          increase the number of points by collecting coins, killing enemies, etc. (optional)
+        </li>
+      </ul>
+    </p>
+</div>
